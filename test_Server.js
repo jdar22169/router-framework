@@ -1,5 +1,5 @@
 const http = require('http');
-const Router = require('../lib/router.js');
+const Router = require('./lib/router.js');
 const router = new Router();
 
 router.get('/pokemon', (req,res) => {

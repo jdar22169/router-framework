@@ -6,7 +6,7 @@ const request = chai.request
 const Router = require('../lib/router.js');
 const router = new Router();
 
-require('../test/test_server.js')
+require('../test_server.js')
 
 describe('Testing GET request', () => {
   it('should give text on /pokemon', (done) => {
@@ -21,7 +21,7 @@ describe('Testing GET request', () => {
 })
 
 describe('Testing POST request',()=> {
- it('should ',(done)=> {
+ it('should get text when sending a POST request',(done)=> {
    request('localhost:3000')
    .post('/pokemon')
    .end((err,res) =>{
@@ -34,7 +34,7 @@ describe('Testing POST request',()=> {
 });
 
 describe('Testing PUT request',()=> {
- it('should ',(done)=> {
+ it('should get text when sending a PUT request',(done)=> {
    request('localhost:3000')
    .put('/pokemon')
    .end((err,res) =>{
@@ -47,7 +47,7 @@ describe('Testing PUT request',()=> {
 });
 
 describe('Testing DELETE request',()=> {
- it('should ',(done)=> {
+ it('should get text when sending a DELETE request',(done)=> {
    request('localhost:3000')
    .delete('/pokemon')
    .end((err,res) =>{
@@ -59,7 +59,7 @@ describe('Testing DELETE request',()=> {
 });
 });
 describe('Testing PATCH request', ()=> {
- it('should ',(done)=> {
+ it('should get text when sending a PATCH request',(done)=> {
    request('localhost:3000')
    .patch('/pokemon')
    .end((err,res) =>{
