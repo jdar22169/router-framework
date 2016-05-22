@@ -36,5 +36,5 @@ $ npm test
 ```
 
 ## People
-  Maddie Mow
-  Kevin Chuang
+  * Maddie Mow
+  * Kevin Chuang
